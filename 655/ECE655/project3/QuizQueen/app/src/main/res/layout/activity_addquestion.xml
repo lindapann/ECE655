@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layoutUserManagement"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/bg">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/buttonToMainMenu"
+        android:onClick="openMain"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/buttonAddQuestion"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/buttonToMainMenu"
+        android:layout_above="@+id/buttonAddQuestion">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/editTextAddQuestionTitle"
+                android:background="#ffffff"
+                android:inputType="text"
+                android:visibility="visible" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
+            <RadioGroup android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgQuestionAnswer">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/radioButtonA"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/radioButtonB"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/radioButtonC"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/radioButtonD"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:longClickable="true">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextAddOptA"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:inputType="text" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextAddOptB"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:inputType="text" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextAddOptC"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:inputType="text" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextAddOptD"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextQuestionTimer"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:inputType="text" />
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

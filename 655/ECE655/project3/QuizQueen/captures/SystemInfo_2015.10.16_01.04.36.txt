@@ -1,0 +1,11 @@
+Applications Graphics Acceleration Info:
+Uptime: 120277328 Realtime: 120277328
+
+** Graphics info for pid 13432 [com.example.sam.quizqueen] **
+View hierarchy:
+  android.view.ViewRootImpl@b324bcf0: 13 views, 0.00 kB (display lists)
+
+Total ViewRootImpl: 1
+Total Views:        13
+Total DisplayList:  0.00 kB
+

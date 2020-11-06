@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layoutUserManagement"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/bg">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/buttonToMainMenu"
+        android:onClick="openMain"/>
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:id="@+id/space" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/spinnerAllQuestion"
+        android:background="#D3D3D3"
+        android:spinnerMode="dialog"
+        android:minWidth="350dp"
+        android:minHeight="40dp"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/buttonToMainMenu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/buttonUpdQuestion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spinnerAllQuestion"
+        android:layout_alignEnd="@+id/spinnerAllQuestion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New"
+        android:id="@+id/buttonAddUser"
+        android:layout_above="@+id/spinnerAllQuestion"
+        android:layout_alignRight="@+id/spinnerAllQuestion"
+        android:layout_alignEnd="@+id/spinnerAllQuestion"
+        android:onClick="addNewUser"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/buttonDelQuestion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinnerAllQuestion"
+        android:layout_above="@+id/buttonUserUpdate"
+        android:layout_marginTop="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:id="@+id/editTextQuestionTitle"
+                android:background="#ffffff" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp">
+            <RadioGroup android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rgAnswer">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/rbA"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/rbB"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/rbC"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/rbD"
+                    android:checked="false"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff" />
+            </RadioGroup>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextOptA"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextOptB"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextOptC"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextOptD"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editTextTimer"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+<!-- From: file:/Users/Sam/Documents/ECE651/Project/QuizQueen/app/src/main/res/layout/activity_quizmanagement.xml -->
